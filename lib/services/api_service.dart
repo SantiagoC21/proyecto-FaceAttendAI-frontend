@@ -15,7 +15,7 @@ class SessionAlreadyExistsException implements Exception {
 /// Implementa el patrón Singleton para asegurar una única instancia de Dio global.
 class ApiService {
   // Configuración de red local (10.0.2.2 mapea a localhost desde el emulador Android)
-  static const String _baseUrl = 'http://192.168.0.10:8000';
+  static const String _baseUrl = 'https://1d58-2800-200-e800-2743-fc65-2f3e-54f7-2b15.ngrok-free.app';
   static String get baseUrl => _baseUrl;
 
   final Dio _dio = Dio(BaseOptions(
